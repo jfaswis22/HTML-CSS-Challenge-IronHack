@@ -1,0 +1,165 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(206, 206, 206);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "menu main"
+        "menu main"
+        "menu footer";
+    gap: 10px;
+    padding: 0px 20px 20px 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #f5f5f5;
+    padding: 20px 0px 20px 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 3px 5px rgb(148, 148, 148);
+}
+
+.header p {
+    margin-top: 0px;
+}
+
+.header h1 {
+    margin-bottom: 0px;
+}
+
+.header-container {
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.header-container h1 {
+    color: rgb(122, 122, 122);
+}
+
+.header-container .zen-garden {
+    color: #d300b7;
+}
+
+.header-container p {
+    color: #8b8b8b;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu .designs,
+.menu .archives,
+.menu .resources {
+    background-color: #f5f5f5;
+    padding: 0px 0px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px rgb(148, 148, 148);
+}
+
+.menu h2 {
+    font-size: larger;
+    margin-top: 15px;
+    color: #575757; 
+    margin-bottom: 3px;
+}
+
+.road h2,
+.about h2,
+.participation h2,
+.benefits h2 {
+    color: #575757;
+    font-size: large;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.road p,
+.about p,
+.participation p,
+.benefits p {
+    margin-top: 5px;
+}
+
+.intro,
+.road,
+.about,
+.participation,
+.benefits {
+    box-shadow: 4px 3px 5px rgb(148, 148, 148);
+}
+
+.intro, 
+.about,
+.benefits {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .designs ul,
+.menu .archives ul,
+.menu .resources ul{
+    margin-top: 0px;
+}
+
+.menu .designs li,
+.menu .archives li,
+.menu .resources li {
+    width: 90%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(161, 161, 161);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.intro p {
+    margin: 0px;
+}
+
+
+.intro, .road, .about, .participation, .benefits {
+    background-color: #f5f5f5;
+    padding: 15px 10px 10px 15px;
+    border-radius: 10px;
+}
+
+.designs a,
+.archives a,
+.resources a{
+    color: #d300b7;
+    text-decoration: none;
+}
+
+.strong-name-designer {
+    color: rgb(77, 77, 77);
+}
